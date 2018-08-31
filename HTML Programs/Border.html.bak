@@ -1,0 +1,10 @@
+<html>
+<head>
+<body>
+<h1 style="border: 2px solid:red;">hello word</h1>
+<h1 style="border: 2px solid:green;">hello word</h1>
+<h1 style="border: 2px solid:blue;">hello word</h1>
+<h1 style="border: 2px solid:orange;">hello word</h1>
+</body>
+</head>
+</html>

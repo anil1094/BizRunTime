@@ -1,0 +1,12 @@
+<html>
+<head>
+<body>
+<p><b>This text is bold</b></p>
+<p><i>This text is italic</i></p>
+<p>This is<sub>subscript</sub>and<sup>superscript</sup></p>
+<p>This is <mark>HTML</mark>Page</p>
+<p> This is <del>Java</del>language</p>
+<p>My Favourate<ins>color</ins>is red</p>
+</body>
+</head>
+</html>

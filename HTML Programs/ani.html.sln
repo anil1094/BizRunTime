@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{636485F5-565B-4FAA-89AC-B29107E05E43}"
+	ProjectSection(SolutionItems) = preProject
+		HTMLPage2.html = HTMLPage2.html
+		HTMLPage3.html = HTMLPage3.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebForm1", "WebForm1", "{20FA2EED-A978-4525-AF3A-FD989B4B2169}"
+	ProjectSection(SolutionItems) = preProject
+		WebForm1.html = WebForm1.html
+		WebForm2.html = WebForm2.html
+		WEbForm6.html = WEbForm6.html
+		WebPage3.html = WebPage3.html
+		WebPage5.html = WebPage5.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{20FA2EED-A978-4525-AF3A-FD989B4B2169} = {636485F5-565B-4FAA-89AC-B29107E05E43}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFFA8819-AD20-46A5-B8D5-F3635A30C5E6}
+	EndGlobalSection
+EndGlobal
