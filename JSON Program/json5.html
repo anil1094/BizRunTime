@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON TUTORIAL</title>
+</head>
+<body>
+<script type="text/javascript">
+	var data={
+		"color":["red","gree","blue","white"],
+		"records":[
+		{"name":"anil","city":"bangalore"},
+		{"name":"sunil","city":"kanpur"},
+		{"name":"ajeet","city":"delhi"}
+		]
+	};
+	for(index in data.color)
+	{
+		document.write(data.color[index]+ "<br/>");
+	}
+	document.write("<br/>");
+	for(i=0;i<data.color.length;i++)
+	{
+		document.write(data.color[i]+ "<br>");
+	}
+	document.write("<br/>");
+	for(i in data.records)
+	{
+		for(j in data.records[i])
+		{
+			document.write(data.records[i][j]+"<br>");
+		}
+	}
+	document.write("<br/>");
+
+	document.write(data.color[3]);
+
+	document.write("<br/>");
+
+	document.write(data.records[2]["name"]);
+</script>
+</body>
+</html>

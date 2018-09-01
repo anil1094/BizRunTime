@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON TUTORIAL</title>
+</head>
+<body>
+<script type="text/javascript">
+var data={
+		"name":"sandeep",
+		"city":"kanpur",
+		"color":["red","green","blue"],
+		"records":[
+		{"name":"anil","city":"bangalore"},
+		{"name":"sunil","city":"kanpur"},
+		{"name":"ajeet","city":"delhi"}
+		]
+	};
+	//document.write(JSON.stringify(data));
+	function sendJSON() 
+	{
+		window.location='handleJSON.php?x=' + JSON.stringify(data);
+	}
+	</script>
+	<button onclick="sendJSON()">send JSON data</button>
+</body>
+</html>
