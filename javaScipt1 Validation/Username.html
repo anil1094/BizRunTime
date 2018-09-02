@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function myFun()
+		{
+			var correct_way=/^[A-za-z]+$/;
+
+			var a=document.getElementById("User_Name").value;
+			if(a=="")
+			{
+				document.getElementById("Message").innerHTML="** plz fil username";
+				return false;
+			}
+			if(a.length<3)
+			{
+				document.getElementById("Message").innerHTML="** username must be 3 character ";
+				return false;
+			}
+			if(a.length>20)
+			{
+				document.getElementById("Message").innerHTML="** username should be less than 20 character";
+				return false;
+			}
+			if(a.match(correct_way))
+				true;
+				else
+				document.getElementById("Message").innerHTML="** only alphabet are allow";
+			return false;
+		}
+	</script>
+<form onsubmit="return myFun()">
+	UserName : <input type="text" id="User_Name" value="">
+	<span id="Message"> </span>
+	<br></br>
+	<input type="submit" name="submit"></input>
+</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function myFun()
+		{
+			var a=document.MyForm.Email.value;
+			if(a.indexOf('@')<=0) 
+			{
+				document.getElementById("Message").innerHTML="** Invalid @ position";
+				return false;
+			}
+			if((a.charAt(a.length-4)!='.') && (a.charAt(a.length-3)!='.'))
+			{
+				document.getElementById("Message").innerHTML="** Invalid . position";
+				return false;
+			}
+		}
+	</script>
+<h1 style="text-align: center;">Email validation</h1>
+<form name="MyForm" onsubmit="return myFun()">
+	Email : <input type="text" name="Email" value="">
+	<span id="Message"></span><br></br>
+	<input type="submit" value="submit">
+</form>
+</body>
+</html>
