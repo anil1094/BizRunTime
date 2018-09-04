@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+
+        //Using construction function
+        //function Employee(firstName, lastName)
+        //{
+        //    this.firstName = firstName;
+        //    this.lastName = lastName; 
+
+        //    this.getFullName = function ()
+        //    {
+        //        return this.firstName + " " + this.lastName;
+        //    }
+        //}
+        //var employee = new Employee("Paragim", "Tech")
+        //{
+        //    document.write("FirstName = " + employee.firstName + "<br/>");
+        //    document.write("lastName = " + employee.lastName + "<br/>");
+        //    document.write("getFullName = " + employee.getFullName() + "<br/>");
+        //}
+
+        //Using Literation Notation
+
+        var employee =
+        {
+            firstName: "anil",
+                lastName :"singh",
+
+            getFullName: function ()
+            {
+                return this.firstName + " " + this.lastName;
+            }
+        }
+
+        document.write("FirstName = " + employee.firstName + "<br/>");
+        document.write("lastName = " + employee.lastName + "<br/>");
+        document.write("getFullName = " + employee.getFullName() + "<br/>");
+        
+
+    </script>
+</body>
+</html>

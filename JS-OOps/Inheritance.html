@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        //Employee will be the base object (similar to the base class in C#)
+        var Employee = function (name) {
+            this.name = name;
+        }
+        //getName() function is addes to the base object (Employee)
+
+        Employee.prototype.getName = function ()
+        {
+            return this.name;
+        }
+
+        Employee.prototype.getNameLength = function () {
+            return this.name.length;
+        }
+        //PermanentEmployee will be the derived objects
+
+        var PermanentEmployee = function (annualSalary)
+        {
+            this.annualSalary = annualSalary;
+        }
+
+        var employee = new Employee("Mark");
+
+        PermanentEmployee.prototype = employee;
+        var pe = new PermanentEmployee(5000);
+        //Derived object (permenentEmployee) can see the base object (Employee) getName() meyhods
+        document.write(pe.getNameLength());
+        
+        //alert(pe instanceof PermanentEmployee);
+    </script>
+</body>
+</html>

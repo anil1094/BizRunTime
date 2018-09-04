@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        getEmployeeDetails();
+        function getEmployeeDetails() {
+            Employee.prototype.getName = function () {
+                return this.name.toUpperCase();
+            }
+
+            var e1 = new Employee("Mark");
+            var e2 = new Employee("sara");
+
+            document.write("e1.name= " + e1.getName() + "<br/>");
+            document.write("e2.name= " + e2.getName() + "<br/>");
+        }
+            function Employee(name)
+            {
+            this.name = name;
+             }
+            Employee.prototype.getName = function ()
+            {
+            return this.name;
+        }
+
+    </script>
+</body>
+</html>

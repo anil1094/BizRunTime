@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function Shape(shapeName) {
+            this.ShapeName = shapeName;
+            Shape.Count = ++Shape.Count || 1;
+
+            Shape.ShowCount = function () {
+                return Shape.Count;
+            }
+        }
+        var shape1 = new Shape("Circle");
+
+        var shape2 = new Shape("Rectangle");
+
+        var shape3 = new Shape("Triangle");
+
+        var shape4 = new Shape("Square");
+
+        document.write("Shape Count = " + Shape.ShowCount());
+    </script>
+</body>
+</html>

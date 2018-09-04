@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function Circle(redius) {
+            this.redius = redius;
+            Circle.PI = 3.141;
+
+            this.CalculateArea = function () {
+                return Circle.PI * this.redius * this.redius;
+            }
+        }
+
+        var circle = new Circle(10);
+        document.write("Area is : = " + circle.CalculateArea());
+    </script>
+</body>
+</html>

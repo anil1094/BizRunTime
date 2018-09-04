@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<script>
+    var person = function (name, age, country, job) {
+        this.name = name;
+        this.age = age
+        this.country = country
+        this.job = job;
+
+    };
+
+    var vinay = new person('anil singh', 22, 'india', 'coder');
+    var john = new person('joen Doe', 24, 'US', 'driver');
+
+    person.prototype.birthyear = function () {
+        var currentyear = new Date().getFullYear();
+        return currentyear - this.age;
+    }
+    document.write(vinay.birthyear());
+</script>
+</body>
+</html>

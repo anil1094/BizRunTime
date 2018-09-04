@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        //Establish a parent class
+        function ParentClass()
+        {
+            this.parent_property1 = "hello";
+            this.parentmethod1 = function parentmethod1(arg1) {
+                return arg1 + "  Parent methods 1 return data ..";
+            }
+        }
+
+        //Etablish a child class
+        function ChildClass()
+        {
+            this.child_property1 = "Anil";
+            this.childMethod1 = function childmethod1(arg1) {
+                return arg1 + "  Child method 1 return data ..";
+            }
+        }
+
+        // Make the Childclass inherit all of the Parent class characteristic
+        //by using the prototype property
+        ChildClass.prototype = new ParentClass();
+
+        //create a new instance of childclass
+
+
+        var instance1 = new ChildClass();
+
+        //check to see if instance1 is an instance of both objects
+
+        alert(instance1 instanceof ParentClass);
+        alert(instance1 instanceof ChildClass);
+
+        //Acess the instance methods and properties
+
+        alert(instance1.parentmethod1("Result : "));
+        alert(instance1.childMethod1(" Result : "));
+        alert(instance1.parent_property1);
+        alert(instance1.child_property1);
+
+        // Override parentmethod1 in the childclass
+        ChildClass.prototype.parentmethod1 = function parentmethod1(arg1) {
+            return arg1 + " I have override Parent Method 1";
+        }
+
+        alert(instance1.parentmethod1("Result: "));
+    </script>
+</body>
+</html>
