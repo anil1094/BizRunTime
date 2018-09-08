@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Exception Handling</h1>
+    <button type="button" onclick="myFun()" >click</button>
+    <script>
+        function myFun() {
+            var x = prompt("enter the number");
+            try {
+                var y = x / 0;
+            }
+            catch (err) {
+                message.innerHTML = "can not divide" + err.name;
+            }
+        }
+    </script>
+</body>
+</html>

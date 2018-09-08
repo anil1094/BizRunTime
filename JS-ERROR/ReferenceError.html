@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Reference Error</h1>
+    <p>
+        You cannot use the value of a non-existing variable:
+
+    </p>
+    <p id="p01"</p>
+    <script>
+        var x;
+        try {
+            x = y + 1;
+        }
+        catch (err) {
+            document.getElementById("p01").innerHTML = err.name;
+        }
+    </script>
+</body>
+</html>
