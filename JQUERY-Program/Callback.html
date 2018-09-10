@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Java Script</title>
+        </head>
+        <body>
+            <h1>Call back function</h1>
+            <div id='hello'>click me</div>
+           <p id='bye'>clcik me to hide</p>
+           <script src="jquery.js"></script>
+           <script>
+            $('hello').click(function()
+            {
+                alert("hello");
+            })
+            $('bye').click(function()
+            
+            {
+                $('bye').hide(function(){
+                    alert("bye");
+                });
+            });
+        
+        </script>
+        </body>
+</html>
