@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                var employeeJSON = {
+                    "firstName": "Anil",
+                    "lastName":"Singh",
+                    "gender":"male",
+                    "adress":"bangalore"
+                };
+        
+            var result = '';
+            result += 'firstName =' +employeeJSON.firstName + '<br/>';
+              result += 'lastName = '+employeeJSON.lastName + '<br/>';
+                result += 'gender = '+employeeJSON.gender + '<br/>';
+                  result += 'Adress = '+employeeJSON.adress + '<br/>';
+
+                  $('#divResult').html(result);
+                      });
+            </script>
+    </head>
+    <body style="font-family:Arial">
+        <div id="divResult"></div>
+    </body>
+</html>
